@@ -2,7 +2,7 @@
 Example [site](https://badge.fury.io/js/akili-tabs.svg) to show how you might organize you application using [Akili framework](https://github.com/ortexx/akili).
 
 
-The example shows a simple site structure, but all the most necessary things are touched to build a powerful single page application. 
+The example shows a simple site's structure, but all the most necessary things are touched to build a powerful single page application. 
 
 ## Getting Started
 
@@ -30,7 +30,8 @@ To run http server with server rendering
 
 ``` npm run server-render ```
 
-## About the framework
-Documentation is [here](https://akilijs.com/docs/getting-started).
+## Links
+* [The framework](https://github.com/ortexx/akili)
+* [Documentation](https://akilijs.com/docs/getting-started)
 
  
