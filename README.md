@@ -31,7 +31,8 @@ To run http server with server rendering
 ``` npm run server-render ```
 
 ## Links
-* [The framework](https://github.com/ortexx/akili)
+* [Example site](https://example.akilijs.com)
+* [Framework](https://github.com/ortexx/akili)
 * [Documentation](https://akilijs.com/docs/getting-started)
 
  
