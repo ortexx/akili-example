@@ -1,0 +1,20 @@
+<for in="${ this.data }" class="row"> 
+  <loop class="col-lg-4 col-md-6 col-sm-12 card-group mb-4">
+    <div class="card">
+      <div class="card-block p-4">
+        <h5 class="card-title">${ this.loopValue.name }</h5>
+        <em class="card-text" hidden="${ !this.loopValue.address || !this.loopValue.address.city }">
+          ${ this.loopValue.address && this.loopValue.address.city }
+        </em>
+        <ul class="mt-3 list-group list-group-flush">
+          <li class="list-group-item" hidden="${ !this.loopValue.phone }">
+            ${ this.loopValue.phone }
+          </li>
+          <li class="list-group-item" hidden="${ !this.loopValue.email }">
+            ${ this.loopValue.email }
+          </li>                    
+        </ul>
+      </div>    
+    </div>
+  </loop>   
+</for>

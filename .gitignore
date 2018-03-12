@@ -1,0 +1,12 @@
+/node_modules
+/public/assets
+
+*.log
+*.bat
+*.exe
+*.idea
+*.git
+*.suo
+*.njsproj
+*.sln
+

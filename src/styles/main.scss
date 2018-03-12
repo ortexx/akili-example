@@ -1,0 +1,30 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-regular.scss';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-brands.scss';
+
+@font-face {
+  font-family: Esteban;
+  src: url("../fonts/Esteban.ttf");
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.link-unstyled, .link-unstyled:link  {
+  color: inherit;
+  text-decoration: inherit;
+}

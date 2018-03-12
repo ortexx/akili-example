@@ -1,0 +1,13 @@
+
+<div class="input-group mb-5">
+  <input class="form-control" placeholder="search..." on-input="${ this.filter = event.target.value }">
+</div>
+<div>
+  <user-cards 
+    data="${ this.filteredUsers = utils.filter(this.users, this.filter, 'name') }" 
+    on-data="${ this.setPosts(event.detail) }"
+  ></user-cards>
+</div>
+<if is="${ !this.filteredUsers.length }">
+  <p class="alert alert-warning">Not found anything</p>
+</if>

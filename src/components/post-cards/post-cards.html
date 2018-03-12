@@ -1,0 +1,30 @@
+<for in="${ this.data }" class="row posts"> 
+  <loop class="col-lg-4 col-md-6 col-sm-12 card-group mb-4">
+    <div 
+      on-click="${ this.selectPost(this.loopValue) }"
+      class="card ${ utils.class({active: this.loopValue.selected }) }"
+    >
+      <div class="buttons">
+        <a 
+          state="app.post-edit" 
+          params="${ {id: this.loopValue.id } }" 
+          on-click="${ event.stopPropagation() }"
+          class="link-unstyled"
+        >
+          <i class="fa fa-pencil-alt"></i>
+        </a>
+        <a 
+          on-click="${ event.stopPropagation(); this.removePost(this.loopValue) }" 
+          hidden="${ this.data.length < 2 }" 
+          class="ml-2"
+        >
+          <i class="fa fa-times"></i>          
+        </a>
+      </div>
+      <div class="card-block p-4">
+        <h5 class="card-title">${ this.loopValue.title }</h5>
+        <p class="card-text">${ this.loopValue.body }</p> 
+      </div>    
+    </div>
+  </loop>   
+</for>
