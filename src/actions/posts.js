@@ -17,7 +17,7 @@ export function getAll() {
 }
 
 export function getPost(id) {
-  return Promise.resolve(getAll()).then(posts => {
+  return getAll().then(posts => {
     let post = posts.find(post => post.id == id);
 
     if(!post) {
