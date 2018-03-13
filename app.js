@@ -29,6 +29,8 @@ if(argv.render) {
   app.get('/', akili.route);
   app.get('/app', akili.route);
   app.get('/app/posts', akili.route);
+  app.get('/app/users', akili.route);
+  app.get('/app/page-edit', akili.route);
 }
 
 app.get('*', akili.index);
