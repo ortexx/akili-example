@@ -1,5 +1,5 @@
 # akili-example
-Example [site](https://badge.fury.io/js/akili-tabs.svg) to show how you might organize you application using [Akili framework](https://github.com/ortexx/akili).
+Example [site](https://example.akilijs.com/) to show how you might organize you application using [Akili framework](https://github.com/ortexx/akili).
 
 
 The example shows a simple site's structure, but all the most necessary things are touched to build a powerful single page application. 
