@@ -7,7 +7,6 @@ const favicon = require('serve-favicon');
 const akiliConnect = require('akili-connect');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
-const fs = require('fs');
 const app = express();
 
 // Create akili middlewares
@@ -60,7 +59,7 @@ const server = app.listen(3300, function () {
   process.on('SIGINT', () => {
     server.close();
     compiler.close && compiler.close();
-    process.exit()
+    process.exit();
   });
 });
 
