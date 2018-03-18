@@ -47,5 +47,6 @@ window.addEventListener('state-changed', () => store.loader = false);
  */
 document.addEventListener('DOMContentLoaded', () => {
   router.init('/app/posts', false);
+  // eslint-disable-next-line no-console
   Akili.init().catch((err) => console.error(err));
 });

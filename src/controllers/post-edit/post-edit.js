@@ -2,7 +2,6 @@
 import swal from 'sweetalert';
 import Akili from 'akili';
 import router from 'akili/src/services/router';
-import store from 'akili/src/services/store';
 import { getPost, updatePost } from '../../actions/posts';
 
 /**

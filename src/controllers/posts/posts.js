@@ -23,7 +23,7 @@ export default class Posts extends Akili.Component {
     router.add('app.posts', '/posts', {
       component: this,
       title: 'Akili example | posts',
-      handler: transition => getPosts()
+      handler: () => getPosts()
     });
   }
 

@@ -6,7 +6,6 @@
  */
 
 import request from 'akili/src/services/request';
-import store from 'akili/src/services/store';
 
 export function getAll() {
   return request.use.api.get('/users').then(res => res.data);

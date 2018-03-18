@@ -1,10 +1,7 @@
 
 import './styles/app.scss'
 import Akili from 'akili';
-import swal from 'sweetalert';
 import router from 'akili/src/services/router';
-import store from 'akili/src/services/store';
-import { getAll as getPosts } from '../../actions/posts';
 
 /**
  * Define the main component

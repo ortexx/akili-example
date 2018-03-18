@@ -30,6 +30,10 @@ To run http server with server rendering
 
 ``` npm run server-render ```
 
+To run eslint
+
+``` npm run eslint ```
+
 ## Links
 * [Example site](https://example.akilijs.com)
 * [Framework](https://github.com/ortexx/akili)

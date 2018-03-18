@@ -2,7 +2,6 @@
 import Akili from 'akili';
 import router from 'akili/src/services/router';
 import { getAll as getUsers } from '../../actions/users';
-import store from 'akili/src/services/store';
 
 /**
  * Define the component as a controller to get a list of users
@@ -23,7 +22,7 @@ export default class Users extends Akili.Component {
     router.add('app.users', '/users', {
       component: this,
       title: 'Akili example | users', 
-      handler: transition => getUsers()
+      handler: () => getUsers()
     });
   }
 

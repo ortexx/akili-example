@@ -34,13 +34,16 @@ if(argv.render) {
 
 app.get('*', akili.index);
 
+// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
+  // eslint-disable-next-line no-console
   console.log(err.stack);
   res.send(err.message);
 });
 
 // run the server
 const server = app.listen(3300, function () {
+  // eslint-disable-next-line no-console
   console.log('Server run on 3300 port');
 
   if(!argv.webpack) {
@@ -53,6 +56,7 @@ const server = app.listen(3300, function () {
       throw err; 
     }
 
+    // eslint-disable-next-line no-console
     console.log(stats.toString({ colors: true, children: false }));
   });
 

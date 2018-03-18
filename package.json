@@ -15,7 +15,8 @@
     "build": "webpack",
     "prod": "NODE_ENV=production node app.js --render --webpack",
     "prod-build": "NODE_ENV=production webpack",
-    "start": "node app.js --webpack"
+    "start": "node app.js --webpack",
+    "eslint": "eslint src app.js"
   },
   "license": "MIT",
   "repository": {
@@ -34,12 +35,15 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.7",
+    "eslint": "^4.19.0",
+    "eslint-loader": "^2.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
