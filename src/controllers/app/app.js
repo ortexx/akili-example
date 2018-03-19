@@ -19,7 +19,7 @@ export default class App extends Akili.Component {
      * 
      * {@link https://akilijs.com/docs/routing}
      */
-    router.add('app', '/app', {
+    router.add('app', '^/app', {
       component: this,
       title: 'Akili example site'         
     });
