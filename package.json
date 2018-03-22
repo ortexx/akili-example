@@ -1,6 +1,6 @@
 {
   "name": "akili-example",
-  "version": "0.5.8",
+  "version": "0.6.0",
   "description": "Akili example site",
   "main": "app.js",
   "author": {
@@ -25,9 +25,9 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.4",
-    "akili": "~0.5.8",
-    "akili-connect": "~0.5.8",
-    "akili-tabs": "~0.5.1",
+    "akili": "~0.6.0",
+    "akili-connect": "~0.6.0",
+    "akili-tabs": "~0.6.0",
     "bootstrap": "^4.0.0",
     "express": "^4.16.3",
     "optimist": "^0.6.1",
