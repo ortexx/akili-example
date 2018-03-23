@@ -1,6 +1,6 @@
 {
   "name": "akili-example",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Akili example site",
   "main": "app.js",
   "author": {

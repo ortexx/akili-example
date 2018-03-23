@@ -37,6 +37,6 @@ To run eslint
 ## Links
 * [Example site](https://example.akilijs.com)
 * [Framework](https://github.com/ortexx/akili)
-* [Documentation](https://akilijs.com/docs/getting-started)
+* [Documentation](https://akilijs.com/docs/architecture)
 
  

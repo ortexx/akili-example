@@ -2,11 +2,18 @@ import './styles/post-cards.scss'
 import Akili from 'akili';
 
 /**
- * Define the universal component to display a list of posts anywhere
+ * Universal component to display a list of posts anywhere
  * 
  * {@link https://akilijs.com/docs/best#docs_encapsulation_through_attributes}
+ * 
+ * @tag post-cards
+ * @selector post-cards[data]
+ * @attr {object[]} data - list of the posts
+ * @scope {object[]} data - list of the users
+ * @message {object[]} data - sent on any data change
  */
 export default class PostCards extends Akili.Component {
+  static matches = '[data]';
   static template = require('./post-cards.html');
 
   static define() {
@@ -19,6 +26,11 @@ export default class PostCards extends Akili.Component {
   }
   
   compiled() {
+    /**
+     * Link attribute "data" with scope property "data"
+     * 
+     * {@link https://akilijs.com/docs/attributes#docs_attribute's_handling}
+     */
     this.attr('data', 'data');
   }
 
