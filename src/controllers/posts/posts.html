@@ -3,12 +3,11 @@
   <input class="form-control" placeholder="search..." on-debounce="${ this.filter = event.target.value }">
 </div>
 <div >
-  <post-cards 
-    data="${ this.filteredPosts = utils.filter(this.posts, this.filter, ['title', 'body']) }" 
+  <post-cards
+    data="${ this.filteredPosts = utils.filter(this.posts, this.filter, ['title', 'body']) }"
     on-data="${ this.setPosts(event.detail) }"
   ></post-cards>
 </div>
 <if is="${ !this.filteredPosts.length }">
   <p class="alert alert-warning">Not found anything</p>
 </if>
-
