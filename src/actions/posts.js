@@ -13,7 +13,7 @@ export function getAll() {
     return Promise.resolve(store.posts);
   }
 
-  return request.use.api.get('/comments').then(res => store.posts = res.data);
+  return request.use.api.get('/posts').then(res => store.posts = res.data);
 }
 
 export function getPost(id) {
