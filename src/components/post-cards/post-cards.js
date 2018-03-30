@@ -15,6 +15,7 @@ import Akili from 'akili';
 export default class PostCards extends Akili.Component {
   static matches = '[data]';
   static template = require('./post-cards.html');
+  static events = ['select', 'delete'];
 
   static define() {
     Akili.component('post-cards', this);
@@ -22,7 +23,7 @@ export default class PostCards extends Akili.Component {
 
   created() {
     this.scope.selectPost = this.selectPost.bind(this);
-    this.scope.removePost = this.removePost.bind(this);
+    this.scope.deletePost = this.deletePost.bind(this);
   }
   
   compiled() {
@@ -34,12 +35,13 @@ export default class PostCards extends Akili.Component {
     this.attr('data', 'data');
   }
 
-  selectPost(post) {
-    this.scope.data.forEach((item) => item.selected && delete item.selected);
-    post.selected = true;
+  selectPost(post) {    
+    this.scope.data.forEach(item => item === post? (item.selected = true): delete item.selected);
+    this.attrs.onSelect.trigger(post.id);
   }
 
-  removePost(post) {   
+  deletePost(post) { 
     this.scope.data.forEach((item, i, arr) => item === post && arr.splice(i, 1));
+    this.attrs.onDelete.trigger(post.id);  
   }
 }
