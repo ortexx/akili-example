@@ -1,7 +1,5 @@
-
 import Akili from 'akili';
 import router from 'akili/src/services/router';
-import store from 'akili/src/services/store';
 import { getAll as getPosts } from '../../actions/posts';
 
 /**
@@ -28,11 +26,21 @@ export default class Posts extends Akili.Component {
   }
 
   created() {
-    this.scope.setPosts = this.setPosts.bind(this);
-    this.scope.posts = store.posts;
+    this.scope.selectPost = this.selectPost.bind(this);
+    this.scope.deletePost = this.deletePost.bind(this);
   }
 
-  setPosts(posts = []) {
-    store.posts = this.scope.posts = posts;
+  compiled() {
+    this.store('posts', 'posts');
+  }
+
+  selectPost(id) {
+    this.scope.posts.forEach(post => post.id == id? (post.selected = true): delete post.selected);
+  }
+
+  deletePost(id) {
+    this.scope.posts.forEach((post, i, arr) => post.id == id && arr.splice(i, 1));
   }
 }
+
+

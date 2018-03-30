@@ -14,7 +14,7 @@
           <i class="fa fa-pencil-alt"></i>
         </a>
         <a 
-          on-click="${ event.stopPropagation(); this.removePost(this.loopValue) }" 
+          on-click="${ event.stopPropagation(); this.deletePost(this.loopValue) }" 
           hidden="${ this.data.length < 2 }" 
           class="ml-2"
         >

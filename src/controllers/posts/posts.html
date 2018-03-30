@@ -2,10 +2,11 @@
 <div class="input-group mb-5">
   <input class="form-control" placeholder="search..." on-debounce="${ this.filter = event.target.value }">
 </div>
-<div >
+<div>
   <post-cards
     data="${ this.filteredPosts = utils.filter(this.posts, this.filter, ['title', 'body']) }"
-    on-data="${ this.setPosts(event.detail) }"
+    on-select="${ this.selectPost(event.detail) }"
+    on-delete="${ this.deletePost(event.detail) }"
   ></post-cards>
 </div>
 <if is="${ !this.filteredPosts.length }">
