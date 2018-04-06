@@ -4,8 +4,7 @@
 </div>
 <div>
   <user-cards 
-    data="${ this.filteredUsers = utils.filter(this.users, this.filter, 'name') }" 
-    on-data="${ this.setPosts(event.detail) }"
+    data="${ this.filteredUsers = utils.filter(this.users, this.filter, 'name') }"
   ></user-cards>
 </div>
 <if is="${ !this.filteredUsers.length }">

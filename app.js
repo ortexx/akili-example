@@ -23,7 +23,6 @@ app.use(express.static(path.join(__dirname, 'public/assets')));
  * {@link https://github.com/ortexx/akili-connect}
  * {@link https://akilijs.com/docs/server}
  */
-
 if(argv.render) {  
   app.get('/', akili.route);
   app.get('/app', akili.route);
