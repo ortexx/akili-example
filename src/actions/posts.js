@@ -9,7 +9,7 @@ import request from 'akili/src/services/request';
 import store from 'akili/src/services/store';
 
 export function getAll() {
-  if(store.posts) {
+  if(store.posts) {    
     return Promise.resolve(store.posts);
   }
 

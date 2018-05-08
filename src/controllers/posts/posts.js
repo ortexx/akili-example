@@ -34,7 +34,7 @@ export default class Posts extends Akili.Component {
     this.store('posts', 'posts');
   }
 
-  selectPost(id) {
+  selectPost(id) {    
     this.scope.posts.forEach(post => post.id == id? (post.selected = true): delete post.selected);
   }
 
