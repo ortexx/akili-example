@@ -37,7 +37,7 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
-    "babel-preset-akili": "^0.7.2",
+    "babel-preset-akili": "^1.0.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.1",
     "eslint": "^4.19.1",

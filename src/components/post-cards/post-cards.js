@@ -10,7 +10,8 @@ import Akili from 'akili';
  * @selector post-cards[data]
  * @attr {object[]} data - list of the posts
  * @scope {object[]} data - list of the users
- * @message {object[]} data - sent on any data change
+ * @message {number} select - sent on any post selection
+ * @message {number} delete - sent on any post removing
  */
 export default class PostCards extends Akili.Component {
   static matches = '[data]';
