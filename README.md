@@ -10,7 +10,11 @@ To run develop mode, http server without server rendering, build webpack with wa
 
 ``` npm start ```
 
-To run production mode, http server with server rendering, build webpack with minification
+To run develop mode, http server with server rendering, build webpack with watching
+
+``` npm run dev-render ```
+
+To run production mode, http server with server-side rendering, build webpack with minification
 
 ``` npm run prod ```
 
@@ -22,11 +26,11 @@ To build webpack for production
 
 ``` npm run prod-build ```
 
-To run http server without server rendering
+To run http server without server-side rendering
 
 ``` npm run server ```
 
-To run http server with server rendering
+To run http server with server-side rendering
 
 ``` npm run server-render ```
 

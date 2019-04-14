@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const plugins = [];
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -20,14 +21,10 @@ const config = {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({
-        uglifyOptions: {
-          minimize: true,
-          compress: {
-            warnings: false
-          }
-        }       
-      })
+      new TerserPlugin({
+        extractComments: false     
+      }),
+      new OptimizeCSSAssetsPlugin()
     ]
   },
   module: {
@@ -52,8 +49,8 @@ const config = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          `css-loader?minimize=${isProd}`,
+          MiniCssExtractPlugin.loader, 
+          'css-loader',
           'resolve-url-loader',
           'sass-loader?sourceMap',
         ]
