@@ -26,10 +26,11 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
-    "akili": "^1.0.8",
+    "akili": "^1.0.9",
     "akili-connect": "^1.0.4",
     "bootstrap": "^4.3.1",
     "express": "^4.16.4",
+    "jsdom": "^15.1.0",
     "optimist": "^0.6.1",
     "sweetalert": "^2.1.2"
   },
