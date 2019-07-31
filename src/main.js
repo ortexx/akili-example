@@ -7,9 +7,9 @@ import App from './controllers/app/app';
 import Posts from './controllers/posts/posts';
 import PostEdit from './controllers/post-edit/post-edit';
 import Users from './controllers/users/users';
-import PostCards from './components/post-cards/post-cards'
-import PostForm from './components/post-form/post-form'
-import UserCards from './components/user-cards/user-cards'
+import PostCards from './components/post-cards/post-cards';
+import PostForm from './components/post-form/post-form';
+import UserCards from './components/user-cards/user-cards';
 
 /**
  * Define the components
