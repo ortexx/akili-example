@@ -27,6 +27,6 @@ export default class Users extends Akili.Component {
   }
 
   created() {
-    this.scope.users = router.transition.path.data;
+    this.scope.users = this.transition.data;
   }
 }

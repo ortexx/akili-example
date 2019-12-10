@@ -29,7 +29,7 @@ export default class PostEdit extends Akili.Component {
 
   created() {
     this.scope.savePost = this.savePost.bind(this);
-    this.scope.post = router.transition.path.data;
+    this.scope.post = this.transition.data;
   }
 
   savePost(post) {
