@@ -25,10 +25,10 @@
     "url": "https://github.com/ortexx/akili-example"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "akili": "^1.0.21",
-    "akili-connect": "^1.0.7",
-    "bootstrap": "^4.3.1",
+    "akili-connect": "^1.0.8",
+    "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "optimist": "^0.6.1",
     "sweetalert": "^2.1.2"
