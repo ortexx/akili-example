@@ -61,7 +61,7 @@ const config = {
       }
     ]
   },
-  plugins: plugins
+  plugins
 };
 
 module.exports = config;
