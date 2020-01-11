@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
-    "akili": "^1.1.0",
+    "akili": "^1.1.3",
     "akili-connect": "^1.0.8",
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
