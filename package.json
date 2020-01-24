@@ -14,7 +14,7 @@
     "dev": "node app.js --webpack",
     "dev-render": "node app.js --webpack --render",
     "build": "webpack",
-    "prod": "NODE_ENV=production node --expose-gc app.js --render --webpack",
+    "prod": "NODE_ENV=production node app.js --render --webpack",
     "prod-build": "NODE_ENV=production webpack",
     "start": "node app.js --webpack",
     "eslint": "eslint src app.js"
