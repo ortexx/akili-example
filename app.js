@@ -2,11 +2,13 @@
 
 const express = require('express');
 const path = require('path');
-const argv = require('optimist').argv;
+const argv = require('yargs').argv;
 const favicon = require('serve-favicon');
 const akiliConnect = require('akili-connect');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
+const posts = require('./data/posts');
+const users = require('./data/users');
 const app = express();
 
 // Create akili middlewares
@@ -16,6 +18,10 @@ const akili = akiliConnect({
 
 app.use(favicon(path.join(__dirname, 'src/img/favicon.png')));
 app.use(express.static(path.join(__dirname, 'public/assets')));
+
+// Api to return posts and users
+app.get('/api/posts', (req, res) => res.send(posts));
+app.get('/api/users', (req, res) => res.send(users));
 
 /**
  *  Set the necessary routes for the server rendering

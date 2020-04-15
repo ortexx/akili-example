@@ -8,5 +8,5 @@
 import request from 'akili/src/services/request';
 
 export function getAll() {
-  return request.use.api.get('/users').then(res => res.data.slice(0, 50));
+  return request.use.api.get('/users').then(res => res.data);
 }

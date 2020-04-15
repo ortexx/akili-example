@@ -25,11 +25,11 @@ PostForm.define();
 UserCards.define();
 
 /**
- * Create a special instance of Request class to work with api
+ * Create a special instance of Request class to work with the api
  * 
  * {@link https://akilijs.com/docs/requests}
  */
-request.addInstance('api', new Request('https://jsonplaceholder.typicode.com', { json: true }));
+request.addInstance('api', new Request('/api', { json: true }));
 
 /**
  * Set the logo loader on url state change
@@ -40,7 +40,7 @@ window.addEventListener('state-change', () => store.loader = true);
 window.addEventListener('state-changed', () => store.loader = false);
 
 /**
- * Initialize the framework and routing
+ * Initialize the framework and the routing
  *  
  * {@link https://akilijs.com/docs/getting-started}
  * {@link https://akilijs.com/docs/routing#docs_router.init}
