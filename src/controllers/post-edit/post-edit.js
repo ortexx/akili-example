@@ -1,5 +1,5 @@
 
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 import Akili from 'akili';
 import router from 'akili/src/services/router';
 import { getPost, updatePost } from '../../actions/posts';
@@ -32,12 +32,14 @@ export default class PostEdit extends Akili.Component {
     this.scope.post = this.transition.data;
   }
 
-  savePost(post) {
-    return updatePost(post).then(() => {      
-      swal({ title: 'Post has been changed', icon: 'success'});
+  savePost(post) { 
+    return updatePost(post).then(() => {       
+      Swal.fire({ title: 'Post has been changed', icon: 'success'});
       return router.state('app.posts');
-    }).catch(() => {
-      swal({ title: 'Oops, there are some troubles', icon: 'fail'});
+    }).catch((err) => {
+      //eslint-disable-next-line no-console
+      console.error(err);
+      Swal.fire({ title: 'Oops, there are some troubles', icon: 'error'});
     });
   }
 }

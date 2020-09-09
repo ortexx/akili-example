@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const argv = require('yargs').argv;
 const favicon = require('serve-favicon');
+const bodyParser = require('body-parser');
 const akiliConnect = require('akili-connect');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
@@ -18,10 +19,13 @@ const akili = akiliConnect({
 
 app.use(favicon(path.join(__dirname, 'src/img/favicon.png')));
 app.use(express.static(path.join(__dirname, 'public/assets')));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Api to return posts and users
 app.get('/api/posts', (req, res) => res.send(posts));
 app.get('/api/users', (req, res) => res.send(users));
+app.put('/api/posts/:id', (req, res) => res.send(req.body));
 
 /**
  *  Set the necessary routes for the server rendering
