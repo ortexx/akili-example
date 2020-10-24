@@ -1,6 +1,6 @@
 {
   "name": "akili-example",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Akili example site",
   "main": "app.js",
   "author": {
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.0",
-    "akili": "^1.2.2",
+    "akili": "^1.2.5",
     "akili-connect": "^1.2.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
@@ -48,7 +48,7 @@
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "resolve-url-loader": "^3.1.1",
+    "resolve-url-loader": "^3.1.2",
     "sass-loader": "^7.3.1",
     "serve-favicon": "^2.5.0",
     "style-loader": "^0.16.1",
