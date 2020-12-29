@@ -1,6 +1,6 @@
 {
   "name": "akili-example",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Akili example site",
   "main": "app.js",
   "author": {
@@ -25,13 +25,13 @@
     "url": "https://github.com/ortexx/akili-example"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.0",
-    "akili": "^1.2.5",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "akili": "^1.2.9",
     "akili-connect": "^1.2.0",
     "body-parser": "^1.19.0",
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^4.5.3",
     "express": "^4.17.1",
-    "sweetalert2": "^10.3.5"
+    "sweetalert2": "^10.12.6"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -39,7 +39,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-akili": "^1.0.0",
     "clean-webpack-plugin": "^0.1.19",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "css-loader": "^1.0.1",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.2.1",
