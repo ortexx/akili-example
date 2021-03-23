@@ -71,8 +71,7 @@ const server = app.listen(3300, function () {
 
   process.on('SIGINT', () => {
     server.close();
-    compiler.close && compiler.close();
-    process.exit();
+    compiler.close? compiler.close(() => process.exit()): process.exit();    
   });
 });
 
