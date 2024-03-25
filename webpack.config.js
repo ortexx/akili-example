@@ -67,11 +67,9 @@ const config = {
       },
       {
         test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-        loader: 'file-loader',
-        options: {
-          esModule: false
-        }
-      }
+        type: 'asset/resource',
+        dependency: { not: ['url'] }
+      },
     ]
   },
   plugins
